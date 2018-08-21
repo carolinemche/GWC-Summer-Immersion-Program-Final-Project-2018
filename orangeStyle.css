@@ -1,0 +1,297 @@
+web{
+  font-size: 110px;
+  font-family: 'Shrikhand', cursive;
+  color: #944dff;
+  text-shadow: 2.5px 1px #000000;
+
+}
+
+.background{
+   background-image:url("pic.jpg");
+   background-repeat: :no-repeat;
+   background-position: center;
+   background-size: cover;
+   resize: both;
+   padding: 5px;
+   padding-bottom: auto;
+   margin: 0px;
+   background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+.title{
+  text-align: left;
+  font-family:'Share Tech Mono', monospace;
+  color: black;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+bt{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family:'Share Tech Mono', monospace;
+}
+
+info{
+  font-size:20px;
+  font-family: 'Assistant', sans-serif;
+}
+foot{
+  font-size:20px;
+  font-family: 'Share Tech Mono', monospace;
+
+}
+.colorbox{
+  background-color: #bb99ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    background-image: url("home.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+/*NAVIGATION CSS*/
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #aa80ff;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddccff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*NAV*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family:'Share Tech Mono', monospace;
+    color: white;
+    background: #944dff;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    text-shadow: 1px 1px #000000;
+}
+
+.cta:focus {
+   outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #c180ff;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg)
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #bb99ff;
+    }
+    100% {
+        fill: white;
+    }
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #aa80ff;
+}
+p{
+  font-size:30px;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 60px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: white;
+}
+
+
+
+.footer {
+
+    background-color:#aa80ff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

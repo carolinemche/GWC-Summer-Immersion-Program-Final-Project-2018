@@ -1,0 +1,15 @@
+org{
+  font-family:'Share Tech Mono', monospace;
+  color: black;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+prog{
+  font-size:35px;
+  font-family:'Share Tech Mono', monospace;
+}
+type{
+  font-size:25px;
+  font-family: 'Assistant', sans-serif;
+}
